@@ -1,13 +1,13 @@
 lane :test do
   update_build_settings_key(
     xcodeproj: "Demo/Demo.xcodeproj",
-    configuration: 'Release',
-    build_settings_key: 'PROVISIONING_PROFILE_SPECIFIER',
+    configuration: "Release",
+    build_settings_key: "PROVISIONING_PROFILE_SPECIFIER",
     map: {
-      'Demo Watch/Info.plist' => 'Demo WatchKit Extension 2',
-      'Demo Watch Extension/Info.plist' => 'Demo WatchKit App',
-      'Demo Today/Info.plist' => 'Demo Today',
-      'Demo/Info.plist' => 'Demo'
+      "Demo Watch Extension/Info.plist" => "Demo WatchKit Extension 2",
+      "Demo Watch/Info.plist" => "Demo WatchKit App",
+      "Demo Today/Info.plist" => "Demo Today",
+      "Demo/Info.plist" => "Demo"
     }
   )
 end
