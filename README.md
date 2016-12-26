@@ -12,12 +12,27 @@ fastlane add_plugin update_build_settings_key
 
 ## About update_build_settings_key
 
-Updated code signing settings from 'Automatic' to a specific profile
+Updates build settings key to a new value
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+**Note to author:**Updates build settings key to a new value including specific profile,
+will update code signing settings from 'Automatic' to a specific profile when key is PROVISIONING_PROFILE_SPECIFIER
+
 
 ## Example
 
+```
+  update_build_settings_key(
+    xcodeproj: "Demo/Demo.xcodeproj",
+    configuration: "Release",
+    build_settings_key: "PROVISIONING_PROFILE_SPECIFIER",
+    map: {
+      "Demo Watch Extension/Info.plist" => "Demo WatchKit Extension 2",
+      "Demo Watch/Info.plist" => "Demo WatchKit App",
+      "Demo Today/Info.plist" => "Demo Today",
+      "Demo/Info.plist" => "Demo"
+    }
+  )
+```
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
 **Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)

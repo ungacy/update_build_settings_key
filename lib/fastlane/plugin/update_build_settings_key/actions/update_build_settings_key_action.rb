@@ -33,11 +33,11 @@ module Fastlane
       end
 
       def self.description
-        "Updated build settings key to a new value"
+        "Updates build settings key to a new value"
       end
 
       def self.authors
-        ["taoye"]
+        ["ungacy"]
       end
 
       def self.return_value
@@ -46,7 +46,7 @@ module Fastlane
 
       def self.details
         # Optional:
-        "Updated build settings key to a new value including specific profile,\nwill Updated code signing settings from 'Automatic' to a specific profile when key is PROVISIONING_PROFILE_SPECIFIER"
+        "Updates build settings key to a new value including specific profile,\nwill Update code signing settings from 'Automatic' to a specific profile when key is PROVISIONING_PROFILE_SPECIFIER"
       end
 
       def self.available_options
