@@ -29,7 +29,7 @@ module Fastlane
           c.build_settings[build_settings_key] = map[info_plist_value]
         end
         project.save
-        UI.success("Successfully updated project ")
+        UI.success("Successfully updated project")
       end
 
       def self.description
